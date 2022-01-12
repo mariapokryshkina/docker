@@ -1,22 +1,23 @@
+
 name: docker
 
 on: push
 
-jobs:
-  build:
-    runs on: ubuntu-latest
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
 
-    steps:
+    steps: 
       - uses: actions/checkout@v2
 
       - name: Run a one-line script
-       run: echo "Hello, docker!"
+        run: echo "Hello, CI/CD!"
 
       #- name: Simulate an error
-      # run: echo "About to fail"; exit 1
+      #  run: echo "About o fail" ; exit 1
 
       #- name: Another greeting
-      # run: echo "Hello docker again!";
+      #  run: echo "Hello, CI/CD again!"
 
 
 
